@@ -1,0 +1,91 @@
+/* ESTILOS GENERALES */
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color:#000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    
+}
+span.no_selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+img::selection{ 
+    background: rgba(0, 0, 0, 0); 
+}
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+h5::selection{
+    background: rgba(0, 0, 0, 0);
+}
+
+
+#contenedor{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    margin: 0 auto;
+    z-index: 99;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgs{
+    width: 450px;
+}
+.lgama{
+    width: 450px;
+    margin: auto;
+    -webkit-transition: 0.7s ease 0.7s;
+}
+.lgama:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.tgama{
+    width: 450px;
+    margin: auto;
+}
+#thunder{
+    margin: auto;
+    position: absolute;
+    z-index: -200;
+}
+#logo{
+    animation-name: zoom;
+    animation-duration: 1.1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes zoom {
+        0%   {transform: scale(1.0, 1.0);}
+        100% {transform: scale(1.12, 1.12)}
+}
+
+
+
+
+
+
+.modal-content {
+    background-color: rgba(0,0,0,0.4);
+    border-color: rgba(255, 255, 255, .25);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 5);
+}

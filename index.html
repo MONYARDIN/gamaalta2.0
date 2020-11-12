@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gama Alta 2.0</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  
+  <body>
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+
+    <!--LOGO GAMA ALTA-->
+    <div id="contenedor">
+      <div class="imgs">
+        <img
+        class="lgama"
+        src="./img/logo3.png"
+        id="logo"
+        oncopy="alert('Opcion deshabilitada');return false"
+        oncontextmenu="alert('Opcion deshabilitada');return false"
+        data-toggle="modal"
+        data-target="#staticBackdrop"/>
+        <img
+        class="tgama"
+        src="./img/letras.png"
+        id="letras"
+        oncopy="alert('Opcion deshabilitada');return false"
+        oncontextmenu="alert('Opcion deshabilitada');return false"/>
+      </div>
+      <div id="thunder">
+        <video src="img/Rayos.mp4" width = "1100"autoplay loop>
+        </video>
+      </div>
+    </div>
+
+    <!-- Modal Unidades de Negocio -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title d-flex justify-content-center"
+              id="staticBackdropLabel">
+              Unidades de Negocio
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a
+                      href="https://escuelaentecnologiassustentables.com/"
+                      target="_blank"
+                      class="nav-link"
+                      data-toggle="tooltip"
+                      title="Cursos y Certificaciones">
+                      <img
+                        id="negocio"
+                        src="./img/ETS-Logo.png"
+                        width="150px"
+                        height="auto"
+                        oncopy="alert('Opcion deshabilitada');return false"
+                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a
+                      href="https://gamaalta2.com.mx/video.html"
+                      target="_blank"
+                      class="nav-link"
+                      data-toggle="tooltip"
+                      title="Servicios Digitales">
+                      <img
+                        id="negocio"
+                        src="./img/LEGADOS-Logo.png"
+                        width="150px"
+                        height="auto"
+                        oncopy="alert('Opcion deshabilitada');return false"
+                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a
+                      href="https://dciluminacionypanelessolares.com/"
+                      target="_blank"
+                      class="nav-link"
+                      data-toggle="tooltip"
+                      title="Distribución y Proyectos">
+                      <img
+                        id="negocio"
+                        src="./img/DCIPSSA-Logo.png"
+                        width="150px"
+                        height="auto"
+                        oncopy="alert('Opcion deshabilitada');return false"
+                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-outline-success justify-content-center"
+              data-dismiss="modal">
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Particles.js -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle = "tooltip"]').tooltip();
+      });
+    </script>
+    
+  </body>
+</html>
