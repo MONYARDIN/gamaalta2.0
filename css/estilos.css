@@ -112,3 +112,21 @@ h5::selection{
         width: 5rem;
     }
 }
+
+@media(max-width: 830px){
+    .video{
+        width: 20rem;
+    }
+    .imgs{
+        width: 18rem;
+    }
+    .lgama{
+        width: 18rem;
+    }
+    .tgama{
+        width: 18rem;
+    }
+    .logo-modal{
+        width: 5rem;
+    }
+}
