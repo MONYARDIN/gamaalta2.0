@@ -7,10 +7,12 @@
 body {
     background-color:#000;
     color: #fff;
-    font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     
+}
+html{
+    font-size: 15px;
 }
 span.no_selection {
     -webkit-user-select: none;
@@ -21,9 +23,13 @@ span.no_selection {
 img::selection{ 
     background: rgba(0, 0, 0, 0); 
 }
+
+.video{
+    width:55rem;
+}
 #particles-js {
 	height: 100vh; 
-	width: 100%;
+	width: 100vw;
     position: fixed;
     z-index: -100;
 }
@@ -46,10 +52,10 @@ h5::selection{
     align-items: center;
 }
 .imgs{
-    width: 450px;
+    width: 30rem;
 }
 .lgama{
-    width: 450px;
+    width: 30rem;
     margin: auto;
     -webkit-transition: 0.7s ease 0.7s;
 }
@@ -58,7 +64,7 @@ h5::selection{
     opacity: 0.7;
 }
 .tgama{
-    width: 450px;
+    width: 30rem;
     margin: auto;
 }
 #thunder{
@@ -79,13 +85,30 @@ h5::selection{
         100% {transform: scale(1.12, 1.12)}
 }
 
-
-
-
-
-
 .modal-content {
     background-color: rgba(0,0,0,0.4);
     border-color: rgba(255, 255, 255, .25);
     box-shadow: 0 7px 18px rgba(0, 0, 0, 5);
+}
+.logo-modal{
+    width: 9rem;
+    height: auto;
+}
+
+@media(max-width: 560px){
+    .video{
+        width: 20rem;
+    }
+    .imgs{
+        width: 15rem;
+    }
+    .lgama{
+        width: 15rem;
+    }
+    .tgama{
+        width: 15rem;
+    }
+    .logo-modal{
+        width: 3rem;
+    }
 }

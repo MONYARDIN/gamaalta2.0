@@ -47,7 +47,8 @@
         oncontextmenu="alert('Opcion deshabilitada');return false"/>
       </div>
       <div id="thunder">
-        <video src="img/Rayos.mp4" width = "1100"autoplay loop>
+        <video class="video" muted autoplay loop>
+          <source src="img/Rayos.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -61,7 +62,7 @@
       tabindex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5
@@ -88,14 +89,14 @@
                       class="nav-link"
                       data-toggle="tooltip"
                       title="Cursos y Certificaciones">
-                      <img
-                        id="negocio"
+                      <div>
+                        <img 
+                        class="logo-modal"
                         src="./img/ETS-Logo.png"
-                        width="150px"
-                        height="auto"
                         oncopy="alert('Opcion deshabilitada');return false"
                         oncontextmenu="alert('Opcion deshabilitada');return false"/>
-                    </a>
+                      </div>
+                      </a>
                   </div>
 
                   <div class="col-md-4">
@@ -106,10 +107,8 @@
                       data-toggle="tooltip"
                       title="Servicios Digitales">
                       <img
-                        id="negocio"
+                        class="logo-modal"
                         src="./img/LEGADOS-Logo.png"
-                        width="150px"
-                        height="auto"
                         oncopy="alert('Opcion deshabilitada');return false"
                         oncontextmenu="alert('Opcion deshabilitada');return false"/>
                     </a>
@@ -123,10 +122,8 @@
                       data-toggle="tooltip"
                       title="Distribución y Proyectos">
                       <img
-                        id="negocio"
+                        class="logo-modal"
                         src="./img/DCIPSSA-Logo.png"
-                        width="150px"
-                        height="auto"
                         oncopy="alert('Opcion deshabilitada');return false"
                         oncontextmenu="alert('Opcion deshabilitada');return false"/>
                     </a>
