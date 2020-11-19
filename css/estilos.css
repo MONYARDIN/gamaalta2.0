@@ -97,18 +97,18 @@ h5::selection{
 
 @media(max-width: 560px){
     .video{
-        width: 20rem;
+        width: 22rem;
     }
     .imgs{
-        width: 15rem;
+        width: 17rem;
     }
     .lgama{
-        width: 15rem;
+        width: 17rem;
     }
     .tgama{
-        width: 15rem;
+        width: 17rem;
     }
     .logo-modal{
-        width: 3rem;
+        width: 5rem;
     }
 }
