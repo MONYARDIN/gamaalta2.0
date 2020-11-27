@@ -5,25 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gama Alta 2.0</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/fb7e92a7f9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/estilos.css" />
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00a300" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  
+
   <body>
     <!-- ID Particles.js -->
     <div id="particles-js"></div>
@@ -32,23 +61,36 @@
     <div id="contenedor">
       <div class="imgs">
         <img
-        class="lgama"
-        src="./img/logo3.png"
-        id="logo"
-        oncopy="alert('Opcion deshabilitada');return false"
-        oncontextmenu="alert('Opcion deshabilitada');return false"
-        data-toggle="modal"
-        data-target="#staticBackdrop"/>
+          data-aos="zoom-in"
+          data-aos-duration="2500"
+          class="lgama"
+          src="./img/logo3.png"
+          id="logo"
+          oncopy="alert('Opcion deshabilitada');return false"
+          oncontextmenu="alert('Opcion deshabilitada');return false"
+          data-toggle="modal"
+          data-target="#staticBackdrop"
+        />
         <img
-        class="tgama"
-        src="./img/letras.png"
-        id="letras"
-        oncopy="alert('Opcion deshabilitada');return false"
-        oncontextmenu="alert('Opcion deshabilitada');return false"/>
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          class="tgama"
+          src="./img/letras.png"
+          id="letras"
+          oncopy="alert('Opcion deshabilitada');return false"
+          oncontextmenu="alert('Opcion deshabilitada');return false"
+        />
       </div>
       <div id="thunder">
-        <video class="video" muted autoplay loop>
-          <source src="img/Rayos.mp4" type="video/mp4">
+        <video
+          class="video"
+          muted
+          autoplay
+          loop
+          data-aos="zoom-in-right"
+          data-aos-duration="2000"
+        >
+          <source src="img/Rayos.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
@@ -61,72 +103,230 @@
       data-keyboard="false"
       tabindex="-1"
       aria-labelledby="staticBackdropLabel"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5
               class="modal-title d-flex justify-content-center"
-              id="staticBackdropLabel">
+              id="staticBackdropLabel"
+            >
               Unidades de Negocio
             </h5>
             <button
               type="button"
               class="close"
               data-dismiss="modal"
-              aria-label="Close">
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
-                    <a
-                      href="https://escuelaentecnologiassustentables.com/"
-                      target="_blank"
-                      class="nav-link"
-                      data-toggle="tooltip"
-                      title="Cursos y Certificaciones">
-                      <div>
-                        <img 
-                        class="logo-modal"
-                        src="./img/ETS-Logo.png"
-                        oncopy="alert('Opcion deshabilitada');return false"
-                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
-                      </div>
-                      </a>
+            <div class="modal-body container-modal">
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/ETS-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseETS"
+                    aria-expanded="false"
+                    aria-controls="collapseETS"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapseETS">
+                    <div class="card card-body">
+                      <p>
+                        <a
+                          href="https://escuelaentecnologiassustentables.com/"
+                          class="link-partner"
+                          target="_blank"
+                        >
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
                   </div>
+                </div>
+              </div>
 
-                  <div class="col-md-4">
-                    <a
-                      href="https://gamaalta2.com.mx/video.html"
-                      target="_blank"
-                      class="nav-link"
-                      data-toggle="tooltip"
-                      title="Servicios Digitales">
-                      <img
-                        class="logo-modal"
-                        src="./img/LEGADOS-Logo.png"
-                        oncopy="alert('Opcion deshabilitada');return false"
-                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
-                    </a>
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/LEGADOS-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    disabled
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseLEGADOS"
+                    aria-expanded="false"
+                    aria-controls="collapseLEGADOS"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapseLEGADOS">
+                    <div class="card card-body">
+                      <p>
+                        <a href="#" class="link-partner" target="_blank">
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
                   </div>
+                </div>
+              </div>
 
-                  <div class="col-md-4">
-                    <a
-                      href="https://dciluminacionypanelessolares.com/"
-                      target="_blank"
-                      class="nav-link"
-                      data-toggle="tooltip"
-                      title="Distribución y Proyectos">
-                      <img
-                        class="logo-modal"
-                        src="./img/DCIPSSA-Logo.png"
-                        oncopy="alert('Opcion deshabilitada');return false"
-                        oncontextmenu="alert('Opcion deshabilitada');return false"/>
-                    </a>
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/DCIPSSA-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseDCIPSSA"
+                    aria-expanded="false"
+                    aria-controls="collapseDCIPSSA"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapseDCIPSSA">
+                    <div class="card card-body">
+                      <p>
+                        <a
+                          href="https://dciluminacionypanelessolares.com/"
+                          class="link-partner"
+                          target="_blank"
+                        >
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/cluster-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseCLUSTER"
+                    aria-expanded="false"
+                    aria-controls="collapseCLUSTER"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapseCLUSTER">
+                    <div class="card card-body">
+                      <p>
+                        <a
+                          href="http://www.clusterinteroceanico.com/"
+                          class="link-partner"
+                          target="_blank"
+                        >
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/Proserma-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsePROSERMA"
+                    aria-expanded="false"
+                    aria-controls="collapsePROSERMA"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapsePROSERMA">
+                    <div class="card card-body">
+                      <p class="text-partner">
+                        PROSERMA H&M. Empresa mexicana que brinda Soluciones
+                        Alternativas en Servicios de Paneles Solares, Plantas FV
+                        Interconectada a Red, Plantas Eléctricas Solares,
+                        Luminarias Solares, Fotovoltaicos, Sistema de Bombeo
+                        Solar, Cerco Eléctrico Solar brindando atención integral
+                        en servicios de Mantenimiento (Preventivos y
+                        Correctivos) en Sistemas Eléctricos de Baja, Media y
+                        Alta Tensión.
+                      </p>
+                      <p>
+                        <a
+                          href="https://prosermahm.jimdofree.com/"
+                          class="link-partner"
+                          target="_blank"
+                        >
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="logo-partners">
+                <div class="element-collapse">
+                  <img src="img/Energy-logo.png" alt="" class="img-logo" />
+                </div>
+                <div class="element-collapse">
+                  <button
+                    class="btn btn-outline-success btn-sm"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseENERGY"
+                    aria-expanded="false"
+                    aria-controls="collapseENERGY"
+                  >
+                    <i class="fas fa-info"></i> Info
+                  </button>
+                  <div class="collapse" id="collapseENERGY">
+                    <div class="card card-body">
+                      <p class="text-partner">
+                        Central Energy Directorio, es un directorio de la nueva
+                        era, para fabricantes, distribuidores,
+                        comercializadores, de material eléctrico, energías
+                        sustentables, iluminación, control, automatización, y
+                        productos en Outlet.
+                      </p>
+                      <p>
+                        <a
+                          href="https://www.centralenergy.mx/"
+                          class="link-partner"
+                          target="_blank"
+                        >
+                          Sitio Web
+                          <i class="fas fa-external-link-alt link-icon"></i>
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,7 +336,8 @@
             <button
               type="button"
               class="btn btn-outline-success justify-content-center"
-              data-dismiss="modal">
+              data-dismiss="modal"
+            >
               Ok
             </button>
           </div>
@@ -144,6 +345,31 @@
       </div>
     </div>
 
+    <!--Animate AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
     <!-- JS Particles.js -->
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
@@ -151,24 +377,26 @@
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous">
-    </script>
-    
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(document).ready(function () {
         $('[data-toggle = "tooltip"]').tooltip();
       });
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
     </script>
-    
   </body>
 </html>
