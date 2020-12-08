@@ -124,8 +124,8 @@ h5::selection {
   padding-bottom: 0px;
 }
 .card {
-  margin-top: 0.8em;
-  padding-top: 0.8em;
+  margin-top: 1em;
+  padding-top: 1em;
   margin-bottom: 0em;
   padding-bottom: 0em;
 }
@@ -138,11 +138,11 @@ h5::selection {
 }
 .card-body {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 22.3em;
+  width: 22em;
   display: flex;
   flex-wrap: inherit;
   color: #eee;
-  font-size: 0.78em;
+  font-size: 0.8em;
   margin-top: 0;
 }
 .link-icon {
@@ -152,7 +152,7 @@ h5::selection {
 .img-logo {
   width: 6.7em;
   height: auto;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 .text-partner {
   font-size: 0.8em;
@@ -171,6 +171,32 @@ a:hover {
   color: #888;
   text-decoration: underline;
 }
+
+.footer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 0.8em;
+  color: #555;
+  position: fixed;
+  bottom: 0;
+  align-items: stretch;
+}
+
+.footer-element1{
+  align-self: center;
+  justify-self: left;
+  margin: 0.5em 0;
+  margin-left: 1em
+}
+
+.footer-element3{
+  align-self: center;
+  justify-self: right;
+  margin: 0.5em 0;
+  margin-right: 1em
+}
+
 
 @media (max-width: 560px) {
   .video {
@@ -215,5 +241,8 @@ a:hover {
   }
   .logo-partners img {
     width: 7rem;
+  }
+  .footer{
+    font-size: 0.4em;
   }
 }
